@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Nisi Sushi</title>
   </head>
@@ -23,7 +27,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="cont-videos-form">
       <section class="video-cont">
         <!-- //aca comienza la configuracion de video manual// -->
         <video
@@ -35,7 +39,7 @@
           height="315"
         >
           <track
-            src="./img/subtitulos.vtt"
+            src="./img/subtitulo.vtt"
             kind="subtitles"
             srclang="es"
             label="Español"
@@ -61,10 +65,9 @@
         action="https://formspree.io/f/xeojblba"
         method="POST"
       >
-        <p class="comentario">Dejanos un Comentario</p>
         <div class="form-interno">
           <label>
-            Nombre:
+            Realiza tu pedido
             <input type="text" name="nombre" placeholder="ingrese su nombre" />
           </label>
 
@@ -80,6 +83,8 @@
               placeholder="escriba aqui su mensaje"
             ></textarea>
           </label>
+
+          <p class="tel"><i class="fa-brands fa-whatsapp"></i> 011-66390959</p>
 
           <button type="submit" class="enviar">Enviar</button>
         </div>
