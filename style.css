@@ -158,6 +158,44 @@ textarea{
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 768px) {
+    *{
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+.encabezado{
+    width: 100%;
+    border: 1px solid rgb(255, 252, 252);
+    display: grid;
+    grid-template-rows: repeat(3 1 fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+.logo-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-videos-form {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+}
+
+.encabezado {
+    flex-direction: column; /* Cambia el encabezado a columna en pantallas pequeñas */
+    padding: 1rem;
+}
+
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.video-cont, .form-cont {
+    width: 100%; /* Ajusta el ancho para que ocupe toda la pantalla en móviles */
+    padding: 0;
+}
+} 
