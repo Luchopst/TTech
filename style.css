@@ -186,5 +186,7 @@ textarea{
    justify-content: center;
    width: fit-content;
   }
-
+.msj{
+    height: 4rem;
+}
 }
