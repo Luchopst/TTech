@@ -18,7 +18,7 @@ body{
     align-items: center;
     background: rgba(0,0,0,0.1);
     color: #fff;
-     letter-spacing: 3px;
+    letter-spacing: 3px;
 }
 .logo-cont{
     width: auto;
@@ -36,7 +36,7 @@ body{
     list-style: none;
     gap: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   text-align: center;
+    width: fit-content;
     display: flex;
     justify-content: space-around;
     justify-content: center;
@@ -190,3 +190,4 @@ textarea{
     height: 4rem;
 }
 }
+/* ----------------------------------------------------- */
