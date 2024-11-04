@@ -52,6 +52,13 @@ body{
     border-bottom: 1px solid red;
     transition: all 1s;
 }
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
 .txt{
     color: #fff;
     text-align: center;
@@ -207,9 +214,11 @@ textarea{
    grid-template-columns: 3 1fr;
    justify-content: center;
    width: fit-content;
+   text-align: center;
   }
 .msj{
     height: 4rem;
 }
+
 }
 /* ----------------------------------------------------- */

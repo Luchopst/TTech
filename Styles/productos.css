@@ -53,6 +53,12 @@ body{
     border-bottom: 1px solid red;
     transition: all 1s;
 }
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
 .txt{
     color: #fff;
     text-align: center;
@@ -115,7 +121,6 @@ footer{
 @media screen and (max-width: 768px) {
     .logo-cont,
     .titulo,
-    h3,
     .img-cont {
         width: 100%;
         display: flex;
@@ -139,4 +144,5 @@ footer{
    text-align: center;
    width: fit-content;
   }
+ 
 }
