@@ -219,6 +219,12 @@ textarea{
 .msj{
     height: 4rem;
 }
-
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
 }
 /* ----------------------------------------------------- */
