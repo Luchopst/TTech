@@ -20,3 +20,4 @@ botonesDescripcion.forEach((boton) => {
     }
   });
 });
+ var listaProductos=["prod-1","prod-2

@@ -81,12 +81,12 @@ img {
     border-radius: 1rem;
    
 }
-.producto{
+.img{
     transition: transform 1s ease-in-out;
     transform-style: preserve-3d;
 }
 
-.producto:hover{
+.img:hover{
     transform: rotateY(360deg);
     transition: 1.5s;
 }
