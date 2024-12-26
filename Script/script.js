@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
       productoDiv.classList.add("producto-carrito");
 
       productoDiv.innerHTML = `
-        <img src="./img/sushi ${producto.id}.jpeg" alt="${producto.nombre}" />
+       <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.src='./img/default.jpeg'" />
         <div class="info">
         
           <p>${producto.nombre}</p>
