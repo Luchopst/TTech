@@ -1,147 +1,68 @@
-*{
+/* General styles */
+* {
     font-family: Arial, Helvetica, sans-serif;
-}
-body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(../img/sushiFondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
-.encabezado{
-    /* configuracion del encabezado en gral */
+
+/* Body */
+body {
+    background: #000 url(../img/sushiFondo.jpg) no-repeat center/cover;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+.encabezado {
     border-bottom: 1px solid #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.1);
+    padding: 0 1rem;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     letter-spacing: 3px;
 }
-.logo-cont{
-    width: auto;
-    height: 3rem;
-    
-}
-.logo-cont>img {
+
+.logo-cont img {
     width: 3rem;
-    border-radius: 50px;
+    height: 3rem;
+    border-radius: 50%;
 }
-.titulo{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.navbar{
+
+.navbar {
     list-style: none;
-    gap: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: fit-content;
     display: flex;
-    justify-content: space-around;
-    justify-content: center;
+    gap: 1.5rem;
 }
-.navbar>li>a{
+
+.navbar > li > a {
     text-decoration: none;
     color: inherit;
-
+    font-size: 1rem;
 }
-/* este es el efecto de cambio de color cuando se posa sobre el menu */
-.navbar>li>a:hover{
+
+.navbar > li > a:hover {
     color: red;
     border-bottom: 1px solid red;
-    transition: all 1s;
+    transition: all 0.5s;
 }
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-}
+
 .txt{
     color: #fff;
     text-align: center;
 }
-.cont-videos-form{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-}
 .video-cont{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 40rem;
 }
-iframe{
-    border-radius: 12px;
-}
-.form-cont{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-     padding-top: 2rem;
-}
-
-::placeholder {
-    color: rgb(34, 33, 33); 
-    opacity: 1; 
-    text-align: center;
-}
-.form-interno{
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(30px);
-    width: 15rem;
-    height: 25rem;
-    border-radius: 20px;
-    
-}
-
-.wtsp{
-    color: rgb(15, 239, 41);
-    font-size:2rem;
-}
-.wtsp:hover{
-color: #0894c3;
-transition: all 1s;
-}
-.tel{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-.enviar{
-    text-align: center;
-    border-radius: 7px;
-    width:100%;
-   height: 2rem;
-    background: #0894c3;
-}
-.enviar:hover{
-    font-size: 16px;
-    color:  rgb(15, 239, 41);
-    transition: all 1s;
-    font-weight: 30;
-}
-.form-interno>label>input{
-    border-radius: 7px;
-}
-footer{
+/* Footer */
+footer {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 30px;
@@ -150,81 +71,105 @@ footer{
     margin-top: 3%;
     color: #fff;
 }
-.footer-title{
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-.redes{
+
+/* Redes sociales */
+.redes {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     width: 50%;
-
 }
-.redes>a{
+
+.redes > a {
     text-decoration: none;
-    list-style: none;
     color: #fff;
 }
 
-input{
-    
-     padding: 10px;
-     text-align: center;
-}
-textarea{
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
-.cont-videos-form{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    justify-content: center;
-    align-items: center;
-}
-@media screen and (max-width: 768px) {
-    .logo-cont,
-    .titulo,
-    .cont-videos-form,
-    .video-cont,
-    iframe,
-    .form-cont,
-    .form-interno,
-    label {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
+@media screen and (max-width: 1024px) {
+    .encabezado {
+        flex-wrap: wrap;
         text-align: center;
+        justify-content: center;
+        margin-bottom: 1rem;
     }
-    .encabezado{
-        display: grid;
-        grid-template-rows: 3 1fr;
+
+    .navbar {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        gap: 1rem;
     }
-  .navbar{
-   display: grid;
-   grid-template-columns: 3 1fr;
-   justify-content: center;
-   width: fit-content;
-   text-align: center;
-  }
-.msj{
-    height: 4rem;
+
+    .productos {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .carrito-icono {
+        top: 15px;
+        right: 15px;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .carrito-icono i {
+        font-size: 1.2rem;
+    }
+
+    #cantidad-productos {
+        font-size: 0.7rem;
+        width: 1rem;
+        height: 1rem;
+        line-height: 1rem;
+    }
 }
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
+
+
+@media screen and (max-width: 768px) {
+    .encabezado {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 0.5rem;
+       padding: 10px;
+    }
+
+    .navbar {
+        grid-template-columns: 1fr;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .producto {
+        padding: 0.8rem;
+    }
 }
+
+
+@media screen and (max-width: 480px) {
+    .carrito-icono {
+        width: 2rem;
+        height: 2rem;
+        
+    }
+
+    .carrito-icono i {
+        font-size: 1rem;
+    }
+
+    #cantidad-productos {
+        font-size: 0.6rem;
+        width: 0.8rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .productos {
+        padding: 1rem;
+    }
 }
-/* ----------------------------------------------------- */

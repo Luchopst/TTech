@@ -1,4 +1,4 @@
-
+/* General styles */
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -6,10 +6,12 @@
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     background: #000 url(../img/sushiFondo.jpg) no-repeat center/cover;
 }
 
+/* Encabezado */
 .encabezado {
     border-bottom: 1px solid #fff;
     display: flex;
@@ -60,27 +62,30 @@ h3 {
     text-align: center;
     margin-top: 10px;
 }
-.txt{
+
+.txt {
     color: #fff;
     font-size: 18px;
     text-align: center;
 }
+
 /*------------------------------------------------------------------*/
+/* Estilos para carrito */
 .carrito {
     padding: 2rem;
     color: #fff;
     text-align: center;
-  }
-  
-  #lista-carrito {
+}
+
+#lista-carrito {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin: 2rem auto;
     max-width: 600px;
-  }
-  
-  .producto-carrito {
+}
+
+.producto-carrito {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,58 +93,60 @@ h3 {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #fff;
     border-radius: 10px;
-  }
-  
-  .producto-carrito img {
+}
+
+.producto-carrito img {
     width: 50px;
     height: 50px;
     border-radius: 5px;
-  }
-  
-  .producto-carrito .info {
+}
+
+.producto-carrito .info {
     flex: 1;
     text-align: left;
     margin-left: 1rem;
-  }
-  
-  .producto-carrito .cantidad {
+}
+
+.producto-carrito .cantidad {
     width: 60px;
     text-align: center;
-  }
-  
-  .producto-carrito .boton-eliminar {
+}
+
+.producto-carrito .boton-eliminar {
     background-color: rgba(255, 0, 0, 0.7);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     padding: 0.5rem 1rem;
-  }
-  
-  .producto-carrito .boton-eliminar:hover {
+}
+
+.producto-carrito .boton-eliminar:hover {
     background-color: rgba(255, 0, 0, 1);
-  }
-  
-  #total-carrito {
+}
+
+#total-carrito {
     margin: 1rem 0;
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  
-  .vaciar-carrito {
+}
+
+.vaciar-carrito {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
     background-color: rgba(255, 0, 0, 0.7);
     color: #fff;
     cursor: pointer;
-  }
-  
-  .vaciar-carrito:hover {
+}
+
+.vaciar-carrito:hover {
     background-color: rgba(255, 0, 0, 1);
-  }
-  /*-----------------------------------------------------------------*/
-  footer {
+}
+
+/*-----------------------------------------------------------------*/
+/* Footer */
+footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -151,6 +158,7 @@ h3 {
     color: #fff;
 }
 
+/* Redes sociales */
 .redes {
     display: flex;
     justify-content: space-evenly;
@@ -162,6 +170,7 @@ h3 {
     color: #fff;
 }
 
+/* Contenedor de carrito */
 .carrito-cont {
     width: 100%;
     height: 4rem;
@@ -169,4 +178,116 @@ h3 {
     align-items: center;
     justify-content: flex-end;
     color: #fff;
+}
+
+/* Media Queries */
+
+/* Tablets grandes (1024px) */
+@media screen and (max-width: 1024px) {
+    .encabezado {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #lista-carrito {
+        max-width: 100%;
+    }
+
+    .carrito-cont {
+        justify-content: center;
+    }
+
+    .producto-carrito img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #total-carrito {
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablets pequeñas (768px) */
+@media screen and (max-width: 768px) {
+    .encabezado {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 0.5rem;
+        padding: 10px;
+      
+    }
+nav{
+    display: flex;
+    justify-content: center;
+}
+    .navbar {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #lista-carrito {
+        max-width: 90%;
+    }
+
+    .carrito {
+        padding: 1.5rem;
+    }
+
+    .producto-carrito {
+        padding: 0.8rem;
+    }
+
+    #total-carrito {
+        font-size: 1.2rem;
+    }
+}
+
+/* Móviles (480px y menos) */
+@media screen and (max-width: 480px) {
+    .logo-cont > img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #lista-carrito {
+        margin: 1rem;
+    }
+
+    .producto-carrito {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .producto-carrito img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .producto-carrito .cantidad {
+        width: 40px;
+    }
+
+    .vaciar-carrito, .producto-carrito .boton-eliminar {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #total-carrito {
+        font-size: 1.1rem;
+    }
+
+    .carrito-cont {
+        justify-content: center;
+    }
 }

@@ -85,6 +85,20 @@ document.addEventListener("DOMContentLoaded", () => {
       precio: 30,
       imagen: "./img/sushi 04.jpeg",
     },
+    {
+      id: 5,
+      nombre: "Producto 5",
+      descripcion: "Una experiencia única.",
+      precio: 30,
+      imagen: "./img/sushi 05.jpeg",
+    },
+    {
+      id: 6,
+      nombre: "Producto 6",
+      descripcion: "Una experiencia única.",
+      precio: 30,
+      imagen: "./img/sushi 06.jpeg",
+    },
   ];
 
   // Contenedor para los productos
@@ -176,8 +190,9 @@ document.addEventListener("DOMContentLoaded", () => {
       productoDiv.classList.add("producto-carrito");
 
       productoDiv.innerHTML = `
-        <img src="./img/producto${producto.id}.jpg" alt="${producto.nombre}" />
+        <img src="./img/sushi ${producto.id}.jpeg" alt="${producto.nombre}" />
         <div class="info">
+        
           <p>${producto.nombre}</p>
           <p>Precio: $${producto.precio}</p>
         </div>
