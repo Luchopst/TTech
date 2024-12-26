@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./Styles/productos.css" />
+    <link rel="stylesheet" href="./Styles/Carrito.css" />
     <title>Nisi Productos</title>
   </head>
   <body>
@@ -25,20 +25,14 @@
         <ul class="navbar">
           <li><a href="./index.html" ">Inicio</a></li>
           <li><a href="./Contacto.html">Contacto</a></li>
-         
+          <li><a href="./Productos.html">Productos</a></li>
           
         </ul>
       </nav>
     </header>
 
     <main>
-      <h2>Productos</h2>
-      <div class="carrito-icono">
-        <a href="./Carrito.html">
-          <i class="fas fa-shopping-cart"></i>
-          <span id="cantidad-productos">0</span>
-        </a>
-      </div>
+      <h3>Carrito</h3>
       <p class="txt">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
         tempore fugiat nesciunt tenetur deserunt in temporibus assumenda sit
@@ -46,8 +40,16 @@
         necessitatibus aliquam.
       </p>
 
-      <section id="productos" class="productos">
-        <!-- Aquí se agregarán las tarjetas dinámicamente -->
+     
+      <section id="carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="lista-carrito">
+          <!-- Los productos se agregarán dinámicamente aquí -->
+        </div>
+        <div id="total-carrito">
+          <!-- Aquí se mostrará el total -->
+        </div>
+        <button id="vaciar-carrito" class="vaciar-carrito">Vaciar Carrito</button>
       </section>
       
 

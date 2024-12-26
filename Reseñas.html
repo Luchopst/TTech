@@ -12,8 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./Styles/productos.css" />
-    <title>Nisi Productos</title>
+    <link rel="stylesheet" href="./Styles/Reseñas.css" />
+    <title>Nisi Reseñas</title>
   </head>
   <body>
     <header class="encabezado">
@@ -23,36 +23,53 @@
       <h1 class="titulo">Nisi Sushi</h1>
       <nav>
         <ul class="navbar">
-          <li><a href="./index.html" ">Inicio</a></li>
+          <li><a href="./index.html">Inicio</a></li>
           <li><a href="./Contacto.html">Contacto</a></li>
-         
-          
+          <li><a href="./Productos.html">Productos</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h2>Productos</h2>
-      <div class="carrito-icono">
-        <a href="./Carrito.html">
-          <i class="fas fa-shopping-cart"></i>
-          <span id="cantidad-productos">0</span>
-        </a>
-      </div>
+      <h2 class="tituloReseñas">Reseñas</h2>
       <p class="txt">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
         tempore fugiat nesciunt tenetur deserunt in temporibus assumenda sit
         eius, iste sunt saepe, iure at voluptatibus ipsa dolores veritatis
         necessitatibus aliquam.
       </p>
-
-      <section id="productos" class="productos">
-        <!-- Aquí se agregarán las tarjetas dinámicamente -->
-      </section>
-      
-
     </main>
+    <div class="form-container">
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Tu nombre"
+          required
+        />
 
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Tu email"
+          required
+        />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          placeholder="Escribe tu mensaje"
+          required
+        ></textarea>
+
+        <button id="boton-enviar">Enviar</button>
+      </form>
+    </div>
     <footer>
       <h3 class="footer-title">Ponce Luciano</h3>
       <section class="redes">
