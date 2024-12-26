@@ -1,5 +1,4 @@
-
-
+/* Estilo base */
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -42,6 +41,7 @@ body {
     width: fit-content;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar > li > a {
@@ -53,7 +53,9 @@ body {
     color: red;
     border-bottom: 1px solid red;
     transition: all 1s;
-}h3 {
+}
+
+h3 {
     color: #fff;
     text-align: center;
 }
@@ -64,20 +66,21 @@ body {
     padding: 4rem;
 }
 
-
-.tituloReseñas{
+.tituloReseñas {
     color: #fff;
     text-align: center;
 }
-.form-container{
-   width: 100%;
-   height: 30rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
-#formulario-contacto{
+
+#formulario-contacto {
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
@@ -86,31 +89,34 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid #fff;
     width: 15rem;
-    height: 30rem;
+    padding: 1rem;
     color: #fff;
 }
-input{
+
+input {
     width: 10rem;
     height: 2rem;
     text-align: center;
     border-radius: 7px;
 }
 
-label{
+label {
     width: 10rem;
     text-align: center;
 }
 
-textarea{
+textarea {
     text-align: center;
 }
 
-#boton-enviar{
+#boton-enviar {
     width: 8rem;
     height: 2rem;
     border-radius: 7px;
     background-color: aqua;
+    cursor: pointer;
 }
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -132,4 +138,72 @@ footer {
 .redes > a {
     text-decoration: none;
     color: #fff;
+}
+
+/* Responsividad */
+
+/* Dispositivos pequeños (teléfonos) */
+@media (max-width: 600px) {
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+
+    #formulario-contacto {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    input, #boton-enviar {
+        width: 100%;
+    }
+
+    .txt {
+        padding: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .redes {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Dispositivos medianos (tablets) */
+@media (max-width: 900px) {
+    .encabezado {
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    #formulario-contacto {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
